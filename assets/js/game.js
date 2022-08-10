@@ -85,7 +85,7 @@ var startGame = function() {
           window.alert("Welcome to Robot Gladiators! Round " + ( i + 1 ) );
           
           var pickedEnemyName = enemyNames[i];
-          enemyHealth = randomNumber(40, 60);
+          enemyHealth = randomNumber(60, 40);
       
           // Call fight function with enemy robot
           fight(pickedEnemyName);
@@ -189,7 +189,7 @@ var shop = function() {
   }
 };
 
-var randomNumber = function() {
+var randomNumber = function(min, max) {
   var value = Math.floor(Math.random() * (max - min + 1)) + min;
 
   return value;
